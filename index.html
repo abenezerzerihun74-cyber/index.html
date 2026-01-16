@@ -1,85 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <title>LibertyHack Academy</title>
 
 <style>
+/* ===== BODY BACKGROUND ===== */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-  color: white;
+  padding: 0;
+  background-color: #020d18;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-matter.png");
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
 }
 
-header {
-  background: #000;
+/* ===== HEADER ===== */
+.header {
+  background-color: #000000;
   padding: 20px;
   text-align: center;
+  border-bottom: 3px solid #00ff99;
 }
 
-header h1 {
-  margin: 0;
-  color: #00ffcc;
+.header img {
+  width: 80px;
 }
 
-section {
+.header h1 {
+  margin: 10px 0 0 0;
+  color: #00ff99;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 95%;
+  margin: auto;
   padding: 20px;
 }
 
-.card {
-  background: rgba(0,0,0,0.6);
+/* ===== CLASS BOX ===== */
+.box {
+  background-color: #0b2239;
+  border: 2px solid #00ff99;
   padding: 15px;
-  margin: 15px 0;
-  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
+.box h2 {
+  color: #00ff99;
+  margin-top: 0;
+}
+
+/* ===== PDF LINKS ===== */
 a {
-  color: #00ffcc;
+  color: #00ff99;
   text-decoration: none;
 }
-</style>
 
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  border-top: 2px solid #00ff99;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-  <h1>LibertyHack Academy 🇺🇸</h1>
-  <p>Ethical Hacking & Cybersecurity Learning</p>
-</header>
+<!-- HEADER -->
+<div class="header">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Hacker_icon.svg">
+  <h1>LibertyHack Academy</h1>
+  <p>Ethical Hacking & Cybersecurity Education</p>
+</div>
 
-<section>
-  <h2>📚 Learning Levels</h2>
+<!-- CONTENT -->
+<div class="container">
 
-  <div class="card">
-    <h3>Beginner</h3>
-    <p>Basics of computers, internet, and security</p>
-    <a href="books/beginner.pdf">Download Beginner Book</a>
+  <div class="box">
+    <h2>Beginner Level</h2>
+    <p>Introduction to cybersecurity, ethics, and basic computer security.</p>
+    <p><a href="beginner.pdf">Download Beginner PDF</a></p>
   </div>
 
-  <div class="card">
-    <h3>Basic</h3>
-    <p>Networking fundamentals and threats</p>
-    <a href="books/basic.pdf">Download Basic Book</a>
+  <div class="box">
+    <h2>Basic Level</h2>
+    <p>Networking basics, operating systems, and security concepts.</p>
+    <p><a href="basic.pdf">Download Basic PDF</a></p>
   </div>
 
-  <div class="card">
-    <h3>Intermediate</h3>
-    <p>Web security, Linux, and tools</p>
-    <a href="books/intermediate.pdf">Download Intermediate Book</a>
+  <div class="box">
+    <h2>Intermediate Level</h2>
+    <p>Web security, vulnerabilities, and defensive techniques.</p>
+    <p><a href="intermediate.pdf">Download Intermediate PDF</a></p>
   </div>
 
-  <div class="card">
-    <h3>Advanced</h3>
-    <p>Ethical hacking concepts and defense</p>
-    <a href="books/advanced.pdf">Download Advanced Book</a>
+  <div class="box">
+    <h2>Advanced Level</h2>
+    <p>Advanced cybersecurity practices and ethical hacking methods.</p>
+    <p><a href="advanced.pdf">Download Advanced PDF</a></p>
   </div>
 
-</section>
+</div>
 
-<footer style="text-align:center; padding:10px; background:#000;">
-  <p>© 2026 LibertyHack Academy | Ethical & Legal Learning Only</p>
-</footer>
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 LibertyHack Academy | Educational Use Only
+</div>
 
 </body>
 </html>
